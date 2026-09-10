@@ -7,18 +7,76 @@
         <title>Game Dev</title>
     </head>
     <body>
+        <nav class="navbar">
+            <h1 class="site-title">Game Dev Website</h1>
+            <div class="nav-buttons">
+                <button class="nav-btn active" onclick="showPage('home')">Home</button>
+                <button class="nav-btn" onclick="showPage('current')">Current Game Jam</button>
+                <button class="nav-btn" onclick="showPage('past')">Past Game Jams</button>
+            </div>
+        </nav>
 
-        <h1>Game Dev Website</h1>
-        <p>Hosts games from previous years.</p>
-        
-        <h1>Spring Game Jam 2026</h1>
-        <h2>Theme: Adventure</h2>
-        <h2>Alithema</h2>
-        <img src="pictures/Ali-1.PNG"/>
-        <img src="pictures/Ali-2.PNG"/>
-        <img src="pictures/Ali-3.PNG"/>
-        <img src="pictures/Ali-4.PNG"/>
-        <p>Alithema is a Platformer game inspired by Celeste where you can teleport and glide and wall jump and everything, just don't mind the world crumbling apart.</p>
-        <p>Game Link: <a href="https://thelittlet.github.io/Ali/">Play</a></p>
+        <!-- Home Page -->
+        <div id="home" class="page">
+            <h2>Welcome to Our Game Dev Community</h2>
+            <div class="about-us-box">
+                <h3>About Us</h3>
+                <p>[Add your about us content here]</p>
+            </div>
+        </div>
+
+        <!-- Current Game Jam Page -->
+        <div id="current" class="page hidden">
+            <h2>Current Game Jam</h2>
+            
+            <div class="jam-info">
+                <div class="info-box">
+                    <h3>Theme</h3>
+                    <p class="jam-theme">[Add theme here]</p>
+                </div>
+                <div class="info-box">
+                    <h3>Time Running</h3>
+                    <p class="jam-time">[Add countdown or time information here]</p>
+                </div>
+            </div>
+
+            <h3>Submissions</h3>
+            <div class="submissions-container">
+                <!-- Submission Template -->
+                <div class="submission">
+                    <h4>[Game Title]</h4>
+                    <div class="submission-images">
+                        <!-- Add screenshots here -->
+                        <p>[Add game images]</p>
+                    </div>
+                    <p class="submission-description">[Add game description here]</p>
+                    <p class="submission-link"><a href="#">Play</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Past Game Jams Page -->
+        <div id="past" class="page hidden">
+            <h2>Past Game Jams</h2>
+            
+            <div class="jam-section">
+                <h3>Spring Game Jam 2026</h3>
+                <h4>Theme: Adventure</h4>
+                
+                <div class="game">
+                    <h4>Alithema</h4>
+                    <div class="game-images">
+                        <img src="pictures/Ali-1.PNG"/>
+                        <img src="pictures/Ali-2.PNG"/>
+                        <img src="pictures/Ali-3.PNG"/>
+                        <img src="pictures/Ali-4.PNG"/>
+                    </div>
+                    <p>Alithema is a Platformer game inspired by Celeste where you can teleport and glide and wall jump and everything, just don't mind the world crumbling apart.</p>
+                    <p><a href="https://thelittlet.github.io/Ali/">Play</a></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
